@@ -20,7 +20,7 @@ background: #fccb90;
 background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+background: linear-gradient(to right,   #009926,#009926,#00b32d);
 }
 
 @media (min-width: 768px) {
@@ -49,7 +49,7 @@ border-bottom-right-radius: .3rem;
       $row1 = $result1->fetch_array();
       $id = $row1['ID'];
       $_SESSION['userID'] = $id;
-      header("Location: System/index.php?id=$id");
+      header("Location: user/index.php?id=$id");
     }else{
       echo "<script type='text/javascript'>
                 Swal.fire('Incorrect account credentials!', 'Please use the correct account credentials', 'error').then(function() {
@@ -72,8 +72,8 @@ border-bottom-right-radius: .3rem;
               <div class="card-body p-md-5 mx-md-4">
 
                 <div class="text-center">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                    style="width: 185px;" alt="logo">
+                  <img src="Logo.png"
+                    style="width: 115px;" alt="logo">
                   <h4 class="mt-1 mb-5 pb-1">EcoPlug</h4>
                 </div>
 
@@ -99,7 +99,7 @@ border-bottom-right-radius: .3rem;
 
                   <div class="d-flex align-items-center justify-content-center pb-4">
                     <p class="mb-0 me-2">Don't have an account?</p>
-                    <a href="register.php" type="button" class="btn btn-outline-danger">Create new</a>
+                    <a href="register.php" type="button" class="btn btn-outline-success">Create new</a>
                     
                   </div>
 
